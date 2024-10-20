@@ -1,0 +1,39 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
