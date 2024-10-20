@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Thả Xuống</title>
+    <style>
+        /* Thiết lập cho menu chính */
+        .main-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-menu > li {
+            background-color: #005bb5;
+            color: #fff;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        /* Thiết lập cho menu phụ */
+        .dropdown-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        .dropdown-menu li {
+            background-color: #fafafa;
+            color: #333;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+
+<ul class="main-menu">
+    <li onclick="toggleDropdown()">Lập trình web
+        <ul class="dropdown-menu" id="dropdownMenu">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById("dropdownMenu");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
